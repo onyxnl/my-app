@@ -1,0 +1,25 @@
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Router components
+import Hello from './Hello';
+import About from './About';
+import Contactus from './Contactus';
+import Profile from './Profile';
+
+
+function App() {
+  const basePath = process.env.REACT_APP_HOMEPAGE || '/';
+  return (
+    <Router basename={basePath}>
+    <div className="App">
+         <Routes >
+          <Route exact path="/" element={<Hello />} /> {/* Home Page Route */}
+          <Route path="/about" element={<About />} /> {/* About Page Route */}
+          <Route path="/contact" element={<Contactus />} /> {/* Contact Page Route */}
+          <Route path="/profile/:id" element={<Profile />} /> {/* Profile Page Route */}
+        </Routes>
+    </div> </Router>
+  );
+}
+
+export default App;

@@ -1,0 +1,278 @@
+html, body {
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+.bg-yellow {
+  background: #D8DA00;
+}
+
+.py-20 {
+  padding-top: 5rem;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+}
+.navigation.active {
+  background: #f0eeea;
+  height: 100vh;
+}
+
+.menuwapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  align-items: center;
+}
+.menuwapper .mainMenu {
+  border: 1px solid black;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.menuwapper .mainMenu .hamburger div {
+  width: 30px;
+  height: 2px;
+  border-radius: 2px;
+  background: #fff;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+.menuwapper .mainMenu .hamburger.toggled div:nth-of-type(1) {
+  transform: translate(0, 8px) rotate(-35deg);
+}
+.menuwapper .mainMenu .hamburger.toggled div:nth-of-type(2) {
+  opacity: 0;
+}
+.menuwapper .mainMenu .hamburger.toggled div:nth-of-type(3) {
+  transform: translate(0, -6px) rotate(35deg);
+}
+.menuwapper .mainMenu span {
+  padding-left: 10px;
+}
+
+nav {
+  background: transparent;
+}
+nav.hidden {
+  display: none;
+}
+nav ul.menulist {
+  width: 50%;
+}
+nav ul.menulist li {
+  padding: 10px 20px;
+}
+nav ul.menulist li a {
+  color: #ee2d73;
+  text-decoration: none;
+}
+nav ul.menulist li a .subline {
+  color: black;
+}
+
+.navwapper {
+  display: flex;
+}
+
+.navcardwrapper {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+}
+.navcardwrapper .card {
+  width: 50%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.yearreivelist {
+  display: flex;
+  list-style: none;
+  gap: 0.75rem;
+  width: 100%;
+}
+.yearreivelist li:not(.linewrapper) {
+  width: calc(25% - 3px);
+}
+.yearreivelist li.linewrapper {
+  height: inherit;
+}
+.yearreivelist li.linewrapper .line {
+  width: 1px;
+  height: 100%;
+  background: black;
+}
+.yearreivelist li .individualreview {
+  padding: 0.75rem;
+  text-align: center;
+}
+.yearreivelist li .individualreview .number {
+  font-size: 3.25rem;
+  font-weight: bold;
+}
+
+.animate-move {
+  background-color: #ee2d73;
+  overflow: hidden;
+  line-height: 44px;
+  height: 44px;
+}
+.animate-move .animate-wrapper {
+  display: flex;
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+          mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+}
+.animate-move .animate-wrapper .animate-move-left {
+  animation: move-left 70s linear infinite;
+  white-space: nowrap;
+  display: flex;
+}
+.animate-move .animate-wrapper .animate-move-left p {
+  padding: 0px 20px;
+}
+
+@keyframes move-left {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}
+.impactstories {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.impactstories .imagewrapper {
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem;
+  width: 100%;
+}
+.impactstories .imagewrapper .card-image {
+  width: 100%;
+}
+.impactstories .imagewrapper .card-image a {
+  border-radius: 21px;
+  aspect-ratio: 14/19;
+  background-position: bottom !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  transition-duration: 0.3s;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+.impactstories .imagewrapper .card-image a p {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.slick-slide h3 {
+  color: white;
+}
+
+.slick-arrow {
+  position: relative;
+}
+
+.cardwapper {
+  position: relative;
+}
+.cardwapper .gamecard {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+}
+.cardwapper .questionIcon {
+  position: absolute;
+  bottom: -20px;
+  right: 10px;
+  animation: bounce 2s ease infinite;
+  box-shadow: var(0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0)), var(0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0)), var(#000);
+}
+.cardwapper .questionIcon.nobounce {
+  animation: none;
+}
+
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-7%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.profile .icon {
+  text-align: right;
+}
+.profile .icon img {
+  position: absolute;
+}
+.profile h1 {
+  padding-top: 40px;
+  color: red;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.profile h2 {
+  padding-top: 30px;
+}
+
+/* Global styles or in App.css */
+ul.example {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+ul.example li {
+  width: 48%;
+  height: 48%;
+  border-radius: 10px;
+  display: block;
+  background-color: #0cdcf7;
+  opacity: 0;
+}/*# sourceMappingURL=style.css.map */
