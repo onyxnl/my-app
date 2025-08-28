@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import Content from "./Content"
+import Nav from './Nav';
 function Contactus(){
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true })
@@ -10,6 +11,7 @@ function Contactus(){
     }, [isInView])
     return (
         <>
+            <Nav/>
             <h2>Get in Touch on the Contact Page</h2>
             <Content/>
             <ImpactStories  />

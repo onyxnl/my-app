@@ -47,6 +47,10 @@ function Nav() {
                         <Link to="/profile/123">Profile <motion.div animate={{ y: isToggled ? 0 : 10}} transition={{ease: "easeIn",duration: 0.8 }} className="subline">Profile Sample</motion.div>
                         </Link> 
                     </li>
+                    <li>
+                        <Link to="/tutorial">Tutorial <motion.div animate={{ y: isToggled ? 0 : 10}} transition={{ease: "easeIn",duration: 0.8 }} className="subline">Tutorial Sample</motion.div>
+                        </Link> 
+                    </li>
                 </ul>
                 <motion.ul className="example">
                     {isToggled && [0, 1, 2, 3].map((_, index) => (

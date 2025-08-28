@@ -1,10 +1,9 @@
 "use client"
 
 import { motion, useMotionValue, useTransform, animate,useInView } from "framer-motion"
-import { div } from "motion/react-client"
 import { useEffect, useRef } from "react"
 import Content from "./Content"
-
+import Nav from './Nav';
 function About() {
     const totalRaised  = useMotionValue(0)
     const individualDonors = useMotionValue(0)
@@ -37,6 +36,7 @@ function About() {
 
     return (
         <div>
+            <Nav/>
             <Content />
             <MarquessText/>
             <Yearreview refProp={ref} 

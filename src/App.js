@@ -5,7 +5,10 @@ import Hello from './Hello';
 import About from './About';
 import Contactus from './Contactus';
 import Profile from './Profile';
-
+import Tutorial from './tutorial';
+import Selectoption from './Selectoption';
+import Listing from './Listing';
+import Formpage from './Form';
 
 function App() {
   const basePath = process.env.REACT_APP_HOMEPAGE || '/';
@@ -17,6 +20,10 @@ function App() {
           <Route path="/about" element={<About />} /> {/* About Page Route */}
           <Route path="/contact" element={<Contactus />} /> {/* Contact Page Route */}
           <Route path="/profile/:id" element={<Profile />} /> {/* Profile Page Route */}
+          <Route path="/tutorial" element={<Tutorial />} />
+          <Route path="/selectoption" element={<Selectoption />} />
+          <Route path="/listing" element={<Listing />} />
+          <Route path="/form" element={<Formpage />} />
         </Routes>
     </div> </Router>
   );
