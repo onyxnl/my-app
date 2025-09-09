@@ -15,7 +15,7 @@ function Listing() {
 
     return (
         <>
-            <Nav/><Subnav/>
+        <Subnav/>
             <div className="py-20">
                 <h1>Order List</h1>
                 <ul>

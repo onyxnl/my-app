@@ -2,9 +2,9 @@ import React,{useState} from "react";
 import logo from './logo.svg';
 import Slider from "react-slick";
 import Counter from './counter';
-import Nav from './Nav';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 
 function Hello() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -27,7 +27,6 @@ function Hello() {
     }
   return (
     <>
-    <Nav/>
       <div className="bg-yellow py-20">
           <header className="App-header">
               <img src={logo} className="App-logo" alt="logo" width="100" />

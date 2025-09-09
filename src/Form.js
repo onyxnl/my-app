@@ -1,9 +1,9 @@
 import React from 'react';
+import Subnav from './subNav';
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup"
-import Nav from './Nav';
-import Subnav from './subNav';
+
 
 const schema = yup.object({
     firstname: yup.string(),
@@ -45,8 +45,7 @@ function FormPage() {
     
     return (
         <>
-            <Nav />
-            <Subnav />
+            <Subnav/>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div>
                     <label style={{fontWeight: "bold"}}>First Name&nbsp;</label>

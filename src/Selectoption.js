@@ -11,7 +11,7 @@ function Selectoption() {
     }
     return (
         <>
-            <Nav/> <Subnav/>
+            {/* <Subnav/> */}
             <div className="py-20">
                 <select onChange={colorchange} name="color" id="color">
                     <option value="red">Red</option>

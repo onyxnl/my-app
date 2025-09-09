@@ -5,7 +5,7 @@ function Content() {
         <article
             style={{
                 maxWidth: 500,
-                padding: "150px 20px",
+                padding: "50px 20px",
                 display: "flex",
                 flexDirection: "column",
                 gap: 20,

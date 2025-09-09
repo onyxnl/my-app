@@ -4,7 +4,6 @@ import Nav from './Nav';
 function Profile() {
   return (
     <>
-      <Nav/>
       <div className="container profile">
           <div className="row">
             <div className="col-lg-4">

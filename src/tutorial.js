@@ -1,11 +1,12 @@
-import Nav from './Nav';
-import { Link } from 'react-router-dom'; 
+
+import { Outlet } from 'react-router-dom';
+import Subnav from './subNav';
 import Selectoption from './Selectoption';
 function Tutorial() {
     
     return (
         <>
-            <Nav/>
+            <Subnav/>
             <Selectoption/>
             
         </>

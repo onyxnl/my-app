@@ -36,7 +36,7 @@ function About() {
 
     return (
         <div>
-            <Nav/>
+            
             <Content />
             <MarquessText/>
             <Yearreview refProp={ref} 

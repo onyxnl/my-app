@@ -9,6 +9,10 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.7",
+    "datatables.net-dt": "^2.3.3",
+    "datatables.net-react": "^1.0.1",
+    "datatables.net-responsive-dt": "^3.0.6",
+    "datatables.net-select-dt": "^3.1.0",
     "motion": "^12.23.12",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
@@ -20,7 +24,7 @@
     "web-vitals": "^2.1.4",
     "yup": "^1.7.0"
   },
-  "homepage": "",
+  "homepage": "/nilar/my-app",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

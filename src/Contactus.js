@@ -11,8 +11,7 @@ function Contactus(){
     }, [isInView])
     return (
         <>
-            <Nav/>
-            <h2>Get in Touch on the Contact Page</h2>
+            <h2 className="py-20">Get in Touch on the Contact Page</h2>
             <Content/>
             <ImpactStories  />
             <Content/>
